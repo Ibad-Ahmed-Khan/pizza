@@ -1,0 +1,60 @@
+.home-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45rem;
+  background: url(../../assets/pizza.jpeg) center;
+  background-size: cover;
+}
+
+.home-block > * {
+  padding: 1rem 2rem;
+}
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  background: black;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: clamp(0.7rem, 2vw + 0.5rem, 2rem);
+}
+
+.btn:active {
+  color: black;
+  background: transparent;
+}
+
+@media screen and (max-width: 56rem) {
+  .home-block {
+    color: white;
+    background: black;
+    margin-inline: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .btn {
+    color: black;
+    background: white;
+  }
+  .btn:active {
+    color: white;
+    background: black;
+    border: 1px solid white;
+  }
+}

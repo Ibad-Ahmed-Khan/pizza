@@ -1,0 +1,68 @@
+.about-parent {
+  display: grid;
+  height: 40rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.about-bottom > * {
+  width: 50%;
+}
+
+.about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-top {
+  background: url(../../assets/multiplePizzas.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-bottom-left img {
+  width: 10rem;
+  height: 14rem;
+}
+
+.about-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+.about-bottom-right p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 56rem) {
+  .about-bottom {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-bottom > * {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .about-bottom-right {
+    padding-top: 2rem;
+  }
+
+  .about-bottom-right p {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+  }
+}
